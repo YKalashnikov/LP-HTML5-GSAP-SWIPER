@@ -20,7 +20,7 @@ const toggleLightMode = (toggleId) => {
   const el = document.getElementById('light');
   const toggle = document.getElementById(toggleId);
   toggle.addEventListener('click', () => {
-    console.log(el.href);
+    //console.log(el.href);
     if (el.href.match('assets/css/styles2.css')) {
       el.href = 'assets/css/styles.css';
     } else {

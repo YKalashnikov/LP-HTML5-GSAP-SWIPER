@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/ico" href="/assets/img/armenian-church.jpg">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+    <title>Image Carousel</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="/" class="nav__logo">Travel</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Destinations</a></li>
+                    <li class="nav__item"><a href="/carousel.html" class="nav__link">Carousel</a></li>
+                    <li id="light__mode" class="nav__item"><a href="#" class="nav__link light__mode"></a></li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <div class="app-wrapper">
+        <div class="app">
+            <div class="cardList">
+                <button class="cardList__btn btn btn--left">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-left"></use>
+                        </svg>
+                    </div>
+                </button>
+
+                <div class="cards__wrapper">
+                    <div class="card current--card">
+                        <div class="card__image">
+                            <img src="https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-381233_1280.jpg" alt="NYX" />
+                        </div>
+                    </div>
+
+                    <div class="card next--card">
+                        <div class="card__image">
+                            <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="San Diego" />
+                        </div>
+                    </div>
+
+                    <div class="card previous--card">
+                        <div class="card__image">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg" alt="France" />
+                        </div>
+                    </div>
+                </div>
+
+                <button class="cardList__btn btn btn--right">
+                    <div class="icon">
+                        <svg>
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <div class="infoList">
+                <div class="info__wrapper">
+                    <div class="info current--info">
+                        <h1 class="text name">Valeria Chan</h1>
+                        <h4 class="text location">New York</h4>
+                        <p class="text description">The city never sleeps</p>
+                    </div>
+
+                    <div class="info next--info">
+                        <h1 class="text name">Alex Mariposa</h1>
+                        <h4 class="text location">San Diego</h4>
+                        <p class="text description">Adventure is never far away</p>
+                    </div>
+
+                    <div class="info previous--info">
+                        <h1 class="text name">Nicolas Frank</h1>
+                        <h4 class="text location">France</h4>
+                        <p class="text description">Let your dreams come true</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app__bg">
+                <div class="app__bg__image current--image">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-381233_1280.jpg" alt="nyc" />
+                </div>
+                <div class="app__bg__image next--image">
+                    <img src="https://cdn.pixabay.com/photo/2013/10/04/21/13/san-diego-190898_1280.jpg" alt="san diego" />
+                </div>
+                <div class="app__bg__image previous--image">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg" alt="France" />
+                </div>
+            </div>
+      
+
+        <div class="loading__wrapper">
+            <div class="loader--text">Loading...</div>
+            <div class="loader">
+                <span></span>
+            </div>
+        </div>
+
+
+        <svg class="icons" style="display: none;">
+            <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='328 112 184 256 328 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+            <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+                <polyline points='184 112 328 256 184 400'
+                    style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+            </symbol>
+        </svg>
+
+        
+           <!--========== IMAGE LOADED ==========-->
+           <script src="./assets/js/imagesloaded.min.js"></script>
+
+        <!--========== GSAP ==========-->
+        <script src="assets/js/gsap.min.js"></script>
+
+         <!--========== GSAP Carousel ==========-->
+         <script src="assets/js/gsap-carousel.js"></script>
+
+</body>
+
+</html>
